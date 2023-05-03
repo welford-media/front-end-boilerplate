@@ -1,0 +1,36 @@
+// LAYOUT
+// A grid-like layout system using flex.
+
+.o-layout {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+// Align
+
+$align-values: start, center, end;
+
+@each $value in $align-values {
+  .o-layout--align-#{$value} {
+    align-items: $value;
+  }
+}
+
+// Justify
+
+$justify-values: start, center, end;
+
+@each $value in $justify-values {
+  .o-layout--justify-#{$value} {
+    justify-content: $value;
+  }
+}
+
+// Item
+
+.o-layout__item {
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
