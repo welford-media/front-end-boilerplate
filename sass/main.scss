@@ -7,9 +7,13 @@
 
 // Resets
 
-@use "reset-box-sizing";
-@use "reset-spacing";
+@use "resets-box-sizing";
+@use "resets-spacing";
 
 // Objects
 
-@use "object-layout";
+@use "objects-layout";
+
+// Helpers
+
+@use "helpers-width";
