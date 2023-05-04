@@ -4,7 +4,7 @@ const gulp = require("gulp");
 const postcss = require("gulp-postcss");
 const sass = require("gulp-sass")(require("sass"));
 const sourcemaps = require("gulp-sourcemaps");
-const { src, dest, watch, series } = require("gulp");
+const { dest, series, src, watch } = require("gulp");
 
 function css() {
   return src("./sass/*.scss")
