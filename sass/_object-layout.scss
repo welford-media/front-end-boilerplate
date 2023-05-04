@@ -4,13 +4,37 @@
 .o-layout {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 1rem;
-  margin-top: 1rem;
+  gap: var(--spacing-medium);
+}
+
+// Sizes
+
+$size-values: (
+  "flush": 0,
+  "small": var(--spacing-small),
+  "medium": var(--spacing-medium),
+  "large": var(--spacing-large),
+);
+
+@each $size, $value in $size-values {
+  .o-layout--#{$size} {
+    gap: $value;
+  }
+}
+
+// Direction
+
+$direction-values: row, row-reverse, column, column-reverse;
+
+@each $value in $direction-values {
+  .o-layout--direction-#{$value} {
+    flex-direction: $value;
+  }
 }
 
 // Align
 
-$align-values: start, center, end;
+$align-values: start, end, center, stretch, baseline;
 
 @each $value in $align-values {
   .o-layout--align-#{$value} {
@@ -20,17 +44,10 @@ $align-values: start, center, end;
 
 // Justify
 
-$justify-values: start, center, end;
+$justify-values: start, end, center, space-between, space-around, space-evenly;
 
 @each $value in $justify-values {
   .o-layout--justify-#{$value} {
     justify-content: $value;
   }
-}
-
-// Item
-
-.o-layout__item {
-  padding-left: 1rem;
-  padding-top: 1rem;
 }
