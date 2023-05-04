@@ -1,1 +1,10 @@
 // HELPERS-WIDTH
+// Generate some width helper classes.
+
+@use "sass:math";
+
+@for $i from 1 through 12 {
+  .h-#{$i} {
+    width: math.percentage(math.div($i, 12));
+  }
+}
