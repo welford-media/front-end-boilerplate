@@ -1,5 +1,6 @@
 const autoprefixer = require("autoprefixer");
 const browsersync = require("browser-sync");
+const cssnano = require("cssnano");
 const gulp = require("gulp");
 const postcss = require("gulp-postcss");
 const sass = require("gulp-sass")(require("sass"));
@@ -10,7 +11,7 @@ function css() {
   return src("./sass/*.scss")
     .pipe(sourcemaps.init())
     .pipe(sass())
-    .pipe(postcss([autoprefixer()]))
+    .pipe(postcss([autoprefixer(), cssnano()]))
     .pipe(sourcemaps.write("."))
     .pipe(dest("./css/"));
 }
