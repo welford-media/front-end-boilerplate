@@ -3,25 +3,25 @@
 
 // Settings
 
-@use "settings-breakpoints";
-@use "settings-colours";
-@use "settings-spacing";
-@use "settings-type";
+@use "settings/settings-breakpoints";
+@use "settings/settings-colours";
+@use "settings/settings-spacing";
+@use "settings/settings-type";
 
 // Reset
 
-@use "reset-box-sizing";
-@use "reset-spacing";
+@use "reset/reset-box-sizing";
+@use "reset/reset-spacing";
 
 // Base
 
-@use "base-headings";
-@use "base-images";
+@use "base/base-headings";
+@use "base/base-images";
 
 // Objects
 
-@use "objects-layout";
+@use "objects/objects-layout";
 
 // Helpers
 
-@use "helpers-widths";
+@use "helpers/helpers-widths";

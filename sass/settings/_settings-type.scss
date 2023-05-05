@@ -1,7 +1,7 @@
 // SETTINGS-TYPE
 // Typography variables and settings.
 
-@use "settings-breakpoints";
+@use "settings/settings-breakpoints";
 
 :root {
   --font-size-ratio: 1.25;
