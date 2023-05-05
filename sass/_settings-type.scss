@@ -1,16 +1,16 @@
-// SETTINGS TYPE
+// SETTINGS-TYPE
 // Typography variables and settings.
 
-@use "settings-responsive";
+@use "settings-breakpoints";
 
 :root {
   --font-size-ratio: 1.25;
 
-  @media (min-width: settings-responsive.$small) {
+  @media (min-width: settings-breakpoints.$small) {
     --font-size-ratio: 1.333;
   }
 
-  @media (min-width: settings-responsive.$medium) {
+  @media (min-width: settings-breakpoints.$medium) {
     --font-size-ratio: 1.414;
   }
 

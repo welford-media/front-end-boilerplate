@@ -3,15 +3,15 @@
 
 // Settings
 
-@use "settings-colour";
-@use "settings-responsive";
+@use "settings-breakpoints";
+@use "settings-colours";
 @use "settings-spacing";
 @use "settings-type";
 
-// Resets
+// Reset
 
-@use "resets-box-sizing";
-@use "resets-spacing";
+@use "reset-box-sizing";
+@use "reset-spacing";
 
 // Objects
 
@@ -19,4 +19,4 @@
 
 // Helpers
 
-@use "helpers-width";
+@use "helpers-widths";
