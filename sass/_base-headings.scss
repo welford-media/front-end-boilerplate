@@ -1,0 +1,36 @@
+// BASE-HEADINGS
+// Base styles for headings 1 through 6.
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  font-family: var(--font-family-sans-serif);
+  font-weight: var(--font-weight-bold);
+}
+
+h6 {
+  font-size: var(--font-size-tiny);
+}
+
+h5 {
+  font-size: var(--font-size-small);
+}
+
+h4 {
+  font-size: var(--font-size-medium);
+}
+
+h3 {
+  font-size: var(--font-size-large);
+}
+
+h2 {
+  font-size: var(--font-size-huge);
+}
+
+h1 {
+  font-size: var(--font-size-gigantic);
+}

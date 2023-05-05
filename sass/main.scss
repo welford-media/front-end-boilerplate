@@ -13,6 +13,11 @@
 @use "reset-box-sizing";
 @use "reset-spacing";
 
+// Base
+
+@use "base-headings";
+@use "base-images";
+
 // Objects
 
 @use "objects-layout";
