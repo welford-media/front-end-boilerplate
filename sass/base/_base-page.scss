@@ -1,0 +1,10 @@
+// BASE-PAGE
+// Base styles for page-level elements.
+
+html {
+  background: var(--colour-white);
+  color: var(--colour-black);
+  font-family: var(--font-family-sans-serif);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-tiny);
+}
