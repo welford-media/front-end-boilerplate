@@ -1,0 +1,14 @@
+// HELPERS-FLOW
+// Add space between flow elements.
+
+$size-values: (
+  "small": var(--spacing-small),
+  "medium": var(--spacing-medium),
+  "large": var(--spacing-large),
+);
+
+@each $size, $value in $size-values {
+  .o-flow-#{$size} > * + * {
+    margin-top: $value;
+  }
+}
