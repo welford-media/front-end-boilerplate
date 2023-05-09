@@ -1,12 +1,12 @@
 // HELPERS-BACKGROUND-COLOUR
 // Generate some background-colour helper classes.
 
-$colours: (
+$colour-values: (
   "black": var(--colour-black),
   "white": var(--colour-white),
 );
 
-@each $colour, $value in $colours {
+@each $colour, $value in $colour-values {
   .h-background-colour-#{$colour} {
     background-color: $value;
   }
