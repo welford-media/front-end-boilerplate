@@ -1,0 +1,13 @@
+// HELPERS-COLOUR
+// Generate some colour helper classes.
+
+$colours: (
+  "black": var(--colour-black),
+  "white": var(--colour-white),
+);
+
+@each $colour, $value in $colours {
+  .h-colour-#{$colour} {
+    color: $value;
+  }
+}
