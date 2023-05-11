@@ -2,9 +2,27 @@
 // Generate some width helper classes.
 
 @use "sass:math";
+@use "settings/settings-breakpoints";
 
 @for $i from 1 through 12 {
   .h-#{$i} {
     width: math.percentage(math.div($i, 12));
+  }
+}
+
+$breakpoint-values: (
+  "tiny": settings-breakpoints.$tiny,
+  "small": settings-breakpoints.$small,
+  "medium": settings-breakpoints.$medium,
+  "large": settings-breakpoints.$large,
+);
+
+@each $breakpoint, $value in $breakpoint-values {
+  @media (min-width: $value) {
+    @for $i from 1 through 12 {
+      .h-#{$i}-#{$breakpoint} {
+        width: math.percentage(math.div($i, 12));
+      }
+    }
   }
 }
