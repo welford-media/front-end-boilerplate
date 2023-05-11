@@ -8,7 +8,7 @@ $size-values: (
 );
 
 @each $size, $value in $size-values {
-  .o-flow-#{$size} > * + * {
+  .h-flow-#{$size} > * + * {
     margin-top: $value;
   }
 }
