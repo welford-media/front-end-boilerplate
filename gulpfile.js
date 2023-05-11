@@ -22,7 +22,7 @@ function serve() {
       baseDir: "./",
     },
   });
-  watch("./sass/*.scss", css);
+  watch("./sass/**/*.scss", css);
   watch("./*.html").on("change", browsersync.reload);
 }
 
